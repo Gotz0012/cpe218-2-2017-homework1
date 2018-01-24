@@ -12,7 +12,7 @@ import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.util.Stack;
 
-public class InterfaceGui extends JPanel
+public class Homework1 extends JPanel
         implements TreeSelectionListener {
     private JEditorPane htmlPane;
     private JTree tree;
@@ -28,7 +28,7 @@ public class InterfaceGui extends JPanel
     //Optionally set the look and feel
     private static boolean useSystemLookAndFeel = false;
 
-    public InterfaceGui() {
+    public Homework1() {
         super(new GridLayout(1,0));
 
         Stack<Node> _list = new Stack();
@@ -81,7 +81,7 @@ public class InterfaceGui extends JPanel
         add(splitPane);
     }
     protected static ImageIcon createImageIcon(String path) {
-        java.net.URL imgURL = InterfaceGui.class.getResource(path);
+        java.net.URL imgURL = Homework1.class.getResource(path);
         if (imgURL != null) {
             return new ImageIcon(imgURL);
         } else {
@@ -212,7 +212,7 @@ public class InterfaceGui extends JPanel
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         //Add content to the window.
-        frame.add(new InterfaceGui());
+        frame.add(new Homework1());
 
         //Display the window.
         frame.pack();

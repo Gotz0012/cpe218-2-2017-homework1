@@ -24,13 +24,13 @@ public class InterfaceGui extends JPanel
     //"Angled" (the default), "Horizontal", and "None".
     private static boolean playWithLineStyle = false;
     private static String lineStyle = "Horizontal";
-
+    static String list ;
     //Optionally set the look and feel
     private static boolean useSystemLookAndFeel = false;
 
     public InterfaceGui() {
         super(new GridLayout(1,0));
-        String list = "251-*32*+";
+
         Stack<Node> _list = new Stack();
         //Create the nodes.
         rootnode = Infix(list, _list);
@@ -222,6 +222,8 @@ public class InterfaceGui extends JPanel
     public static void main(String[] args) {
         //Schedule a job for the event dispatch thread:
         //creating and showing this application's GUI.
+        if(args.length>0)list=args[0];
+        else list= "251-*32*+";
         javax.swing.SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 createAndShowGUI();

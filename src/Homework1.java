@@ -218,7 +218,7 @@ public class Homework1 extends JPanel
         frame.pack();
         frame.setVisible(true);
     }
-
+//
     public static void main(String[] args) {
         //Schedule a job for the event dispatch thread:
         //creating and showing this application's GUI.

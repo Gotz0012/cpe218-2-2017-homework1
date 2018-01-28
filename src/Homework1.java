@@ -134,7 +134,7 @@ public class Homework1 extends JPanel
     private void createNodes(DefaultMutableTreeNode top,Node index) {
         DefaultMutableTreeNode category = null;
         DefaultMutableTreeNode book = null;
-        if(_checknum(index)==false){
+        if(_checknum(index.key)==false){
             category = new DefaultMutableTreeNode(index.left.key);
             book = new DefaultMutableTreeNode(index.right.key);
             createNodes(category,index.left);

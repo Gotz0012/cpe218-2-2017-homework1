@@ -152,6 +152,7 @@ public class Homework1 extends JPanel
             return  false;
         }
     }
+    ///
     private static int Total(DefaultMutableTreeNode _root) {
         char a = _root.toString().charAt(0);
         if (_checknum(a)) {
